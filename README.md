@@ -33,6 +33,6 @@ It will create the schema and will load the data you need for search IP.
 
 # OnLine search
 
-In your browser (javascript support enabled) type: http://giwm.asuscomm.com
+In your browser (javascript support enabled) type: http://giwma.asuscomm.com
 
 
