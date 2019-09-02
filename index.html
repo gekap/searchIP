@@ -1,0 +1,65 @@
+ <html>
+	 <head> 	 
+		 <script src="showData.js"></script>
+		<style>
+			body {width:50%; margin:0 auto;}
+		</style>
+		<style>
+			.textboxclass {
+				height: 35px;
+				width: 600px;
+				border:1px;
+				solid #000000;
+			}
+			.tdcolor1 {
+				border: 0px solid #41FF00;
+			}
+			.tdcolor {
+				border: 0px solid #41FF00;
+			}
+			.textcolor{
+				solid #41FF00;
+			}
+			
+			.ascii-art {
+				font-family: monospace;
+				white-space: pre;
+				font-size: 20px;
+			}
+		</style>
+	 </head>
+	 <title>Search for IPv4 or IPv6 or domain name</title>
+	 <body bgcolor="#000000">
+	
+	 <center><div class="ascii-art" STYLE="color: #41FF00;">
+     _______. _______     ___      .______        ______  __    __      __  .______   
+    /       ||   ____|   /   \     |   _  \      /      ||  |  |  |    |  | |   _  \  
+   |   (----`|  |__     /  ^  \    |  |_)  |    |  ,----'|  |__|  |    |  | |  |_)  | 
+    \   \    |   __|   /  /_\  \   |      /     |  |     |   __   |    |  | |   ___/  
+.----)   |   |  |____ /  _____  \  |  |\  \----.|  `----.|  |  |  |    |  | |  |      
+|_______/    |_______/__/     \__\ | _| `._____| \______||__|  |__|    |__| | _|      
+                                                                                      <h6 align=right>powered by ip2location databases</h6>
+</div></center>
+	
+	 <table align="left">
+	 <tr></tr>
+	 <td class="tdcolor1"><label STYLE="color: #41FF00;">searchip@localhost:~$</label></td><td><input id="searchTxt" name="searchTxt" class="textboxclass" STYLE="color: #41FF00; font-family: system-ui; font-size: 16px; background-color: #000000;" size="30" maxlength="30" autofocus />
+	<button id="myBtn" style="display: none;" onclick="showData(searchTxt.value)">Button</button>
+	</td>
+	<script>
+		var input = document.getElementById("searchTxt");
+
+		input.addEventListener("keyup", function(event) {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+				document.getElementById("myBtn").click();
+				}
+		});
+		
+	</script>
+	<tr></tr>
+	<td></td><td class="tdcolor" STYLE="color: #41FF00;">
+	 <div id="txtHint"></div></td>
+	 </table>
+	 </body>
+</html>
