@@ -28,6 +28,11 @@ sudo systemctl start mysqld
 
 Download the schema with data and load it to mysql
 
+unzip the files and run the below command.
+```
+sudo mysql -u root -p <ip2location.sql
+```
+
 It will create the schema and will load the data you need for search IP.
 
 
