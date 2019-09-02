@@ -41,3 +41,5 @@ It will create the schema and will load the data you need for search IP.
 In your browser (javascript support enabled) type: http://giwma.asuscomm.com
 
 
+# License
+MIT (https://vjpr.mit-license.org/)
